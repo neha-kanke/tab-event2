@@ -1,0 +1,54 @@
+
+
+
+body{
+    background-color: aqua;
+}
+
+
+.tabheading{
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    text-transform: capitalize;
+    display: flex;
+    list-style: none;
+}
+.tabheading li{
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    transition:  all .4s ease-in-out;
+
+}
+
+.tabpanel{
+    position: relative;
+    border: 2px solid black;
+}
+
+
+.tabcontent{
+    padding:10px;
+    background-color: hotpink;
+    color: black;
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    display: none;
+    font-style: italic;
+} 
+.tabcontent.active{
+    display: block;
+}
+.tabheading li.active,
+.tabheading li:focus,
+.tabheading li:hover,
+.tabheading li:active{
+    background-color: chartreuse;
+    /* border-radius: 72%; */
+}
+
